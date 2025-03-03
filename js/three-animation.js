@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Camera setup
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.z = 5;
+    camera.position.y = 1.0;
     
     // Renderer setup
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -20,6 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create a group to hold our objects
     const group = new THREE.Group();
     scene.add(group);
+    
+    // Position the group higher on the page (above the text)
+    group.position.y = 3.7;
     
     // Create a cube
     const geometry = new THREE.BoxGeometry(1, 1, 1);
@@ -101,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const raycaster = new THREE.Raycaster();
         raycaster.setFromCamera({ x, y }, camera);
         
-        const intersects = raycaster.intersectObject(cube);
+        const intersects = raycaster.intersectObjects([cube], true);
         
         if (intersects.length > 0) {
             // Start glitching effect

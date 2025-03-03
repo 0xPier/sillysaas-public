@@ -162,7 +162,8 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 5;
+    pointer-events: auto;
 }
 
 .hero-content {
@@ -171,6 +172,17 @@ p {
     text-align: center;
     max-width: 800px;
     padding: 0 var(--spacing-lg);
+    pointer-events: none;
+}
+
+.hero-content h1,
+.hero-content p,
+.hero-content .cta-button {
+    pointer-events: auto;
+}
+
+.logo {
+    pointer-events: none;
 }
 
 .glitch-text {
