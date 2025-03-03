@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sillySaaS - Disrupting Tech One App at a Time</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Three.js for 3D elements -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="images/logo.svg" alt="sillySaaS Logo" width="120">
+        </div>
+        <div class="nav-icons">
+            <div class="nav-icon" data-tooltip="About">
+                <i class="fas fa-question-circle"></i>
+            </div>
+            <div class="nav-icon" data-tooltip="Projects">
+                <i class="fas fa-folder"></i>
+            </div>
+            <div class="nav-icon" data-tooltip="Contact">
+                <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-text">Disrupting Tech One App at a Time</h1>
+            <p class="subtitle">We build ridiculous software that actually works</p>
+            <div class="cta-button">
+                <button>Explore Projects</button>
+            </div>
+        </div>
+        <div id="hero-canvas-container"></div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2 class="section-title">Our Projects</h2>
+        <div class="projects-container">
+            <!-- Project cards will be dynamically generated -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <h2 class="section-title">About sillySaaS</h2>
+            <p>We're a collective of developers, designers, and digital mischief-makers creating software that challenges conventional tech norms. Our apps are functional, satirical, and sometimes absurd.</p>
+            <p>Founded in 2023, we've been pushing the boundaries of what software can be, one ridiculous app at a time.</p>
+        </div>
+        <div class="about-image">
+            <div class="glitch-image"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="social-icons">
+            <a href="#" class="social-icon" data-tooltip="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon" data-tooltip="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-icon" data-tooltip="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+        </div>
+        <p class="contact-email">hello@sillysaas.com</p>
+    </section>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-button">
+            <i class="fas fa-comment"></i>
+        </div>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h3>Chat with sillySaaS</h3>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message bot">
+                    <p>Hey there! How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 sillySaaS. All rights reserved.</p>
+        <p class="easter-egg">There are 3 easter eggs on this page. Can you find them?</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/three-animation.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
