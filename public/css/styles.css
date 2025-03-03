@@ -101,6 +101,15 @@ p {
     mix-blend-mode: difference;
 }
 
+.logo {
+    position: relative;
+    z-index: 1000;
+    pointer-events: auto !important;
+    background-color: var(--primary-black);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 .logo-text {
     fill: var(--primary-white);
     font-family: var(--font-mono);
@@ -179,10 +188,6 @@ p {
 .hero-content p,
 .hero-content .cta-button {
     pointer-events: auto;
-}
-
-.logo {
-    pointer-events: none;
 }
 
 .glitch-text {
